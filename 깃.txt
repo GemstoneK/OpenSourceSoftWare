@@ -1,0 +1,16 @@
+git 설치가 끝난 후
+git bash를 연다
+1. git bash setting하기
+git  config --global user.name "your_name"
+내 영어 이름인 Gemstone Kim을 입력했다.
+
+git config --global user.email "your_email"
+내 구글 메일인 serve3690@gmail.com을
+입력했다.
+
+정보 확인하기
+git config --list
+username과 useremail 부분을 참고한다.
+
+
+1시 10분 전화
