@@ -12,5 +12,60 @@ git config --global user.email "your_email"
 git config --list
 username과 useremail 부분을 참고한다.
 
+git init
+initialize의 준말
+깃 초기화
+맨 처음에 프로젝트 올릴 때 git init을 해준다.
 
-1시 10분 전화
+git add .
+git add 어떤 파일을 깃에 올릴지 보자~
+.은 점(전)부라는 뜻이다.
+
+특정 파일 추가하는 법
+index.html만 올리고 싶다.
+git add index.html
+잘 쓰지 않는다.
+
+git status
+상태를 알려주는 명령어
+
+history 만드는 법
+git commit -m "first commit"
+git commit 은 히스토리를 만드는 것이다.
+히스토리란
+과제 끝, 진짜 최종, 진짜 파이널 최최종
+이런식으로 히스토리를 봐야겠다.
+first commit 은 히스토리의 이름이다.
+외국식 과제 진짜 파이널 최최종
+
+히스토리 깃허브에 보내기
+로컬 저장소와 깃 저장소 사이에 연결고리가 없다.
+그래서 연결하는 방법은
+git remote add origin https://github.com/GemstoneK/openSourceSoftWare.git
+
+연결고리 확인 방법
+git remote -v
+fetch와 push가 나온다.
+
+github으로 보내기
+git push origin master
+뜻: origin: 원격 저장소 이름마스터 브랜치로 보낸다.
+
+git hub사이트에는
+git branch -M main라는 명령어가
+연결시키기 전에 있고,
+(아마 브랜치 이름 바꾸는 걸 것이다.
+찾아보니 -m은 변경할 branch이름 변경될 branch이름
+이고, -M은 이미 이름이 같더라도, 덮어쓴다는 의미이다.
+git push -u origin main으로 깃허브로 보낸다.
+그리고, 원격저장소를 main으로 고정해서 다음부터 
+git push 명령어만 쓰면 된다.
+
+계속 추가하기
+git add . 만 해주면 된다.
+git init은 해줄 필요가 없다.
+git commit -m "second commit"
+
+이미 push한 깃 초기화하기
+git reset --h(하드웨어) 커밋아이디
+git push -f(강제)
